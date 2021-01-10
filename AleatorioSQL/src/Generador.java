@@ -2,9 +2,13 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-
+/**
+ * Lectura del diccionario y generacion de la base de datos como script SQL
+ * @author fmm
+ *
+ */
 public class Generador {
-	public final int MAX = 1048575;
+	public final int MAX = 1048575; //numero de lineas del diccionario, fijo
 	private int nTablas;
 	private int nCampos;
 	private int nEntradas;
@@ -22,6 +26,9 @@ public class Generador {
 		this.nEntradas = nEntradas;
 	}
 
+	/**
+	 * Leer el diccionario en el array palabras
+	 */
 	public void leer() {
 		File diccionario = new File("src/diccionario.dat");
 
@@ -37,6 +44,11 @@ public class Generador {
 		}
 
 	}
+	
+	/**
+	 * Sacar una palabra aleatoria del diccionario
+	 * @return
+	 */
 
 	private String nale() {
 		return palabras[(int) (MAX * Math.random())];

@@ -6,6 +6,11 @@ import java.io.IOException;
 
 import javax.swing.*;
 
+/**
+ * Interfaz grafica de usuario y escritura del script SQL.
+ * @author fmm
+ *
+ */
 public class Ventana {
 	private String tituloVentana;
 	private int resultado;
@@ -18,6 +23,10 @@ public class Ventana {
 		super();
 		this.tituloVentana = tituloVentana;
 	}
+	
+	/**
+	 * Construccion de la ventana principal
+	 */
 
 	public void iniciarInterfaz() {
 		JFrame fr = new JFrame(tituloVentana);
@@ -94,6 +103,14 @@ public class Ventana {
 
 		});
 	}
+	
+	/**
+	 * Ejecuta la generacion de la base de datos
+	 * @param nTablas
+	 * @param nCampos
+	 * @param nEntradas
+	 * @return
+	 */
 
 	private String lanzarGenerador(int nTablas, int nCampos, int nEntradas) {
 		String script = "";

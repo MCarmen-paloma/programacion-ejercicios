@@ -1,4 +1,9 @@
-
+/**
+ * Generador de bases de datos sin sentido alguno, sacando palabras de un diccionario al azar
+ * Genera script SQL en pantalla y como archivo de texto plano.
+ * @author fmm
+ *
+ */
 public class Principal {
 
 	public static void main(String[] args) {
