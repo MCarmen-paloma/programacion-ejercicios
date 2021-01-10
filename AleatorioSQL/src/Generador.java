@@ -81,14 +81,14 @@ public class Generador {
 
 		for (int i = 0; i < nTablas; i++) {
 			for (int j = 0; j < nCampos; j++) {
-				String valores = "(";
+				String valores = "('";
 				script += "INSERT INTO " + nombreTabla[i];
 				for (int k = 0; k < nEntradas; k++) {
 					valores += nale();
 					if (k < nEntradas - 1) {
-						valores += ",";
+						valores += "','";
 					} else {
-						valores += ")";
+						valores += "')";
 					}
 				}
 				script += " VALUES " + valores + ";\n";
