@@ -3,6 +3,12 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
+/**
+ * Version con interfaz grafica de usuario del programa de sacar de la lista de clase
+ * Frank Martinez Moreno 1AMT B
+ * @author fmm
+ *
+ */
 public class ListaClase3a {
 	
 	/**
